@@ -1,0 +1,38 @@
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.avatar-user {
+    width: 5%;
+    height: 40px;
+    padding: 0px;
+}
+
+.img-avatar-user {
+    width: 100%;
+    height: 100%;
+}
+
+.comment-body {
+    width: 90%;
+    border: 0.5px solid #f69320;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.user-name-style-strong {
+    text-decoration: underline;
+}
+.user-name-style-span {
+    font-size: x-small;
+}
+
+@media (max-width: 400px) {
+    .comment-panel-body p {
+        font-size: small;
+    }
+
+}

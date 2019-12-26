@@ -1,0 +1,61 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    /*background-color: darkcyan;*/
+    width: 100%;
+    height: 90%;
+    padding: 5px;
+}
+.signup-title p {
+    width: 80%;
+    font-size: 23px;
+    text-align: center;
+    border-bottom: 0.5px solid #f69320;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.container-signup {
+    width: 60%;
+    max-width: 840px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-signup form input {
+    background-color: #F6E2D1;
+    border: 0.5px solid #f69320;
+}
+
+.container-signup form textarea,
+textarea {
+    background-color: #F6E2D1;
+    border: 0.5px solid #f69320;
+}
+.select-county {
+    background-color: #F6E2D1;
+    border: 0.5px solid #f69320;
+}
+.errorText {
+    font-size: small;
+    color: red;
+}
+
+.borderColor {
+    border: 0.5px solid #ff0000
+}
+.success {
+    font-size: medium;
+    color: green;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.errors {
+    font-size: medium;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+}

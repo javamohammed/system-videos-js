@@ -1,0 +1,11 @@
+.container {
+    margin-top: 10px;
+    width: 97vw;
+    height: 100vh;
+    max-width: 110vw;
+    /* background-color: chocolate;*/
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+
+}

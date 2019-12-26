@@ -1,0 +1,111 @@
+.modal {
+    position: fixed;
+    /*display: none;*/
+    opacity: 0.5;
+    transform: translateY(-3rem);
+    transition: opacity 200ms ease-out, transform 500ms ease-out;
+    z-index: 200;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid orange;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.open {
+    display: block !important;
+    opacity: 1 !important;
+    -webkit-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+}
+
+.Menu-user {
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    font-size: x-large;
+    font-weight: bold;
+}
+.Menu-user li {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.Menu-user li a{
+    text-decoration: none;
+    color: black;
+}
+.menu-li {
+    letter-spacing: 0;
+}
+
+.menu-li:hover,
+.menu-li:active {
+    letter-spacing: 5px;
+    color: orange;
+}
+
+.menu-li:after,
+.menu-li:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(rgb(238, 157, 6), 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.menu-li:hover:after,
+.menu-li:hover:before {
+    backface-visibility: hidden;
+    border-color: rgb(247, 132, 25);
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+
+.menu-li:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
+}
+
+.close-tab {
+    position: fixed;
+    top:2px;
+    right: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 400px) {
+    .Menu-user {
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        font-size: medium;
+        font-weight: bold;
+    }
+    .modal {
+        left: 10%;
+        width: 80%;
+        height: 70%;
+    }
+}
